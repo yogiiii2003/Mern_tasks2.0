@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task2</title>
+</head>
+<style>
+    body {
+        display: grid;
+        place-content: center;
+    }
+</style>
+<body>
+    <input type="text" name="input" id="input">
+    <button onclick="sortString()">Sort</button>
+    <br />
+    <label for="output"><strong>Output:</strong></label>
+    <p id="output"></p>
+
+    <script>
+        const sortString=()=>{
+            const string=document.getElementById("input").value;
+            var s=string.split("").sort().join("");
+            document.getElementById("output").innerHTML=s;
+        };
+    </script>
+</body>
+</html>
